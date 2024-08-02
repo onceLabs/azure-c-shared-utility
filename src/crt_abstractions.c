@@ -10,9 +10,9 @@
 #include <float.h>
 #include <math.h>
 #include <errno.h>
-#include "azure_c_shared_utility/gballoc.h"
-#include "azure_c_shared_utility/optimize_size.h"
-#include "azure_c_shared_utility/crt_abstractions.h"
+#include "../inc/azure_c_shared_utility/gballoc.h" // TODO clean this up
+#include "../inc/azure_c_shared_utility/optimize_size.h"
+#include "../inc/azure_c_shared_utility/crt_abstractions.h"
 
 // VS 2008 does not have INFINITY and all the nice goodies...
 #if defined (TIZENRT)
