@@ -2,9 +2,11 @@
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
 #include <stdlib.h>
-#include <pthread.h>
+// #include <pthread.h>
 #include "azure_c_shared_utility/lock.h"
 #include "azure_c_shared_utility/xlogging.h"
+
+#include <zephyr/posix/pthread.h>
 
 LOCK_HANDLE Lock_Init(void)
 {
